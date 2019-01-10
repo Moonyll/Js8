@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Js8</title>
+</head>
+<body>
+    <form onsubmit="maj()">
+        <div><label for="age">Votre âge : </label><input type="text" id="age" name="age" /></div>
+        <div><input type="submit" name="submit" id="submit" value="valider" /></div>
+    </form>
+<script>
+    function maj() {
+        var ag = parseInt(document.getElementById('age').value,10);
+        if (ag > 18)
+            alert(`Vous êtes majeur`);
+        else
+            alert(`Vous êtes mineur`);
+    }
+</script>
+</body>
+</html>
